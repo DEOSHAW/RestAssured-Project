@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-25T16:39:26 IST" name="Default suite" finished-at="2021-04-25T16:39:32 IST" duration-ms="5223">
+  <suite started-at="2021-05-01T13:18:47 IST" name="Default suite" finished-at="2021-05-01T13:18:49 IST" duration-ms="1543">
     <groups>
     </groups>
-    <test started-at="2021-04-25T16:39:26 IST" name="Default test" finished-at="2021-04-25T16:39:32 IST" duration-ms="5223">
-      <class name="testscripts.GoogleMapAPITest">
-        <test-method signature="testGoogleMAPAddPlaceAPI()[pri:0, instance:testscripts.GoogleMapAPITest@5223e5ee]" started-at="2021-04-25T16:39:27 IST" name="testGoogleMAPAddPlaceAPI" finished-at="2021-04-25T16:39:32 IST" duration-ms="5175" status="PASS">
+    <test started-at="2021-05-01T13:18:47 IST" name="Default test" finished-at="2021-05-01T13:18:49 IST" duration-ms="1543">
+      <class name="testscripts.ValidateMockAPIResponse">
+        <test-method signature="validateMockAPIResponse()[pri:0, instance:testscripts.ValidateMockAPIResponse@5223e5ee]" started-at="2021-05-01T13:18:47 IST" name="validateMockAPIResponse" finished-at="2021-05-01T13:18:49 IST" duration-ms="1502" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGoogleMAPAddPlaceAPI -->
-      </class> <!-- testscripts.GoogleMapAPITest -->
+        </test-method> <!-- validateMockAPIResponse -->
+      </class> <!-- testscripts.ValidateMockAPIResponse -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
