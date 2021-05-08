@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.GoogleMapAPITest">
+      <class name="testscripts.LibraryAPITest">
         <methods>
-          <include name="testGoogleMAPAddPlaceAPI"/>
+          <include name="testLibraryAPI" invocation-numbers="1"/>
         </methods>
-      </class> <!-- testscripts.GoogleMapAPITest -->
+      </class> <!-- testscripts.LibraryAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-01T13:18:47 IST" name="Default suite" finished-at="2021-05-01T13:18:49 IST" duration-ms="1543">
+  <suite started-at="2021-05-08T17:10:52 IST" name="Default suite" finished-at="2021-05-08T17:10:56 IST" duration-ms="4081">
     <groups>
     </groups>
-    <test started-at="2021-05-01T13:18:47 IST" name="Default test" finished-at="2021-05-01T13:18:49 IST" duration-ms="1543">
-      <class name="testscripts.ValidateMockAPIResponse">
-        <test-method signature="validateMockAPIResponse()[pri:0, instance:testscripts.ValidateMockAPIResponse@5223e5ee]" started-at="2021-05-01T13:18:47 IST" name="validateMockAPIResponse" finished-at="2021-05-01T13:18:49 IST" duration-ms="1502" status="PASS">
+    <test started-at="2021-05-08T17:10:52 IST" name="Default test" finished-at="2021-05-08T17:10:56 IST" duration-ms="4081">
+      <class name="testscripts.LibraryAPITest">
+        <test-method signature="testLibraryAPI(java.lang.String)[pri:0, instance:testscripts.LibraryAPITest@3ba9ad43]" started-at="2021-05-08T17:10:52 IST" name="testLibraryAPI" data-provider="authorData" finished-at="2021-05-08T17:10:56 IST" duration-ms="3590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chetan Bhagat]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateMockAPIResponse -->
-      </class> <!-- testscripts.ValidateMockAPIResponse -->
+        </test-method> <!-- testLibraryAPI -->
+        <test-method signature="testLibraryAPI(java.lang.String)[pri:0, instance:testscripts.LibraryAPITest@3ba9ad43]" started-at="2021-05-08T17:10:56 IST" name="testLibraryAPI" data-provider="authorData" finished-at="2021-05-08T17:10:56 IST" duration-ms="424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John Foe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLibraryAPI -->
+      </class> <!-- testscripts.LibraryAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
