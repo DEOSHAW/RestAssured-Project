@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-08T17:10:52 IST" name="Default suite" finished-at="2021-05-08T17:10:56 IST" duration-ms="4081">
+  <suite started-at="2021-05-15T11:57:03 IST" name="Default suite" finished-at="2021-05-15T11:57:11 IST" duration-ms="7433">
     <groups>
     </groups>
-    <test started-at="2021-05-08T17:10:52 IST" name="Default test" finished-at="2021-05-08T17:10:56 IST" duration-ms="4081">
-      <class name="testscripts.LibraryAPITest">
-        <test-method signature="testLibraryAPI(java.lang.String)[pri:0, instance:testscripts.LibraryAPITest@3ba9ad43]" started-at="2021-05-08T17:10:52 IST" name="testLibraryAPI" data-provider="authorData" finished-at="2021-05-08T17:10:56 IST" duration-ms="3590" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chetan Bhagat]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-05-15T11:57:03 IST" name="Default test" finished-at="2021-05-15T11:57:11 IST" duration-ms="7433">
+      <class name="testscripts.GitHubAPITest">
+        <test-method signature="testGitHubAPIs()[pri:0, instance:testscripts.GitHubAPITest@5223e5ee]" started-at="2021-05-15T11:57:03 IST" name="testGitHubAPIs" finished-at="2021-05-15T11:57:11 IST" duration-ms="7374" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLibraryAPI -->
-        <test-method signature="testLibraryAPI(java.lang.String)[pri:0, instance:testscripts.LibraryAPITest@3ba9ad43]" started-at="2021-05-08T17:10:56 IST" name="testLibraryAPI" data-provider="authorData" finished-at="2021-05-08T17:10:56 IST" duration-ms="424" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John Foe]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLibraryAPI -->
-      </class> <!-- testscripts.LibraryAPITest -->
+        </test-method> <!-- testGitHubAPIs -->
+      </class> <!-- testscripts.GitHubAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

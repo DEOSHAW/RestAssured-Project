@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.LibraryAPITest">
+      <class name="testscripts.GitHubAPITest">
         <methods>
-          <include name="testLibraryAPI" invocation-numbers="1"/>
+          <include name="testGitHubAPIs"/>
         </methods>
-      </class> <!-- testscripts.LibraryAPITest -->
+      </class> <!-- testscripts.GitHubAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
