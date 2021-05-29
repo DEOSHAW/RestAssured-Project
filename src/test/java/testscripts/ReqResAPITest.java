@@ -22,9 +22,9 @@ public class ReqResAPITest {
 	{
 		RestAssured.baseURI="https://reqres.in/";
 		//Create User
-		String response=given().body(new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir")+File.separator+"src\\test\\resources\\CreateUserData.json"))))
+		String response=given().log().all().body(new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir")+File.separator+"src\\test\\resources\\CreateUserData.json"))))
 		.when().post("/api/users")
-		.then().assertThat().statusCode(201).extract().response().asString();
+		.then().log().all().assertThat().statusCode(201).extract().response().asString();
 		
 		JsonPath js=new JsonPath(response);
 		String createdAT=js.getString("createdAt");

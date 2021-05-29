@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.GitHubAPITest">
+      <class name="testscripts.ReqResLoginTest">
         <methods>
-          <include name="testGitHubAPIs"/>
+          <include name="testLoginAPI"/>
         </methods>
-      </class> <!-- testscripts.GitHubAPITest -->
+      </class> <!-- testscripts.ReqResLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
