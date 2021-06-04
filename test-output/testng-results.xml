@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-29T11:46:02 IST" name="Default suite" finished-at="2021-05-29T11:46:08 IST" duration-ms="5784">
+  <suite started-at="2021-06-04T17:55:11 IST" name="Default suite" finished-at="2021-06-04T17:55:16 IST" duration-ms="4445">
     <groups>
     </groups>
-    <test started-at="2021-05-29T11:46:02 IST" name="Default test" finished-at="2021-05-29T11:46:08 IST" duration-ms="5784">
-      <class name="testscripts.POJOTest">
-        <test-method signature="testLoginAPI()[pri:0, instance:testscripts.POJOTest@69b2283a]" started-at="2021-05-29T11:46:02 IST" name="testLoginAPI" finished-at="2021-05-29T11:46:08 IST" duration-ms="5741" status="PASS">
+    <test started-at="2021-06-04T17:55:11 IST" name="Default test" finished-at="2021-06-04T17:55:16 IST" duration-ms="4445">
+      <class name="testscripts.ReqResAPITest_withSpecBuilder">
+        <test-method signature="testReqResAPIs()[pri:0, instance:testscripts.ReqResAPITest_withSpecBuilder@69b2283a]" started-at="2021-06-04T17:55:11 IST" name="testReqResAPIs" finished-at="2021-06-04T17:55:16 IST" duration-ms="4398" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginAPI -->
-      </class> <!-- testscripts.POJOTest -->
+        </test-method> <!-- testReqResAPIs -->
+      </class> <!-- testscripts.ReqResAPITest_withSpecBuilder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
