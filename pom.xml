@@ -17,11 +17,6 @@
 </dependency>
 <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-core</artifactId>
-    <version>2.12.3</version>
-</dependency>
-<dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-annotations</artifactId>
     <version>2.12.3</version>
 </dependency>
@@ -36,6 +31,20 @@
     <artifactId>json-schema-validator</artifactId>
     <version>4.3.3</version>
 </dependency>
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>6.10.4</version>
+</dependency>
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>6.10.4</version>
+    <scope>test</scope>
+</dependency>
+
+
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>

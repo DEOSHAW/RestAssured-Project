@@ -41,6 +41,11 @@ public class AddPlaceAPITestWithSerialization {
 				AddPlaceResponse addPlaceResponse=req.when().post("/maps/api/place/add/json")
 				.as(AddPlaceResponse.class);
 				
+				
+				/*RequestSpecification req=given().log().all().queryParam("key", "qaclick123").body(p);
+				AddPlaceResponse addPlaceResponse=req.when().post("/maps/api/place/add/json")
+				.then().statusCode(200).extract().response().as(AddPlaceResponse.class);*/
+				
 				String scope=addPlaceResponse.getScope();
 				Assert.assertEquals(scope, "APP");
 		
