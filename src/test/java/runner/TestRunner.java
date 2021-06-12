@@ -7,8 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = "Features",tags="@github",
- glue={"stepdefinition","hook"},
+features = "Features",tags="@createUser and @modifyUser",
+ glue={"stepdefinition"},
  monochrome=true,
  plugin = { "pretty", "html:target/cucumber-reports","rerun:Features/rerun.txt" }
  )
