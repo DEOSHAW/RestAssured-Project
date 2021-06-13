@@ -53,7 +53,8 @@ public class ReqResStepDefinition {
 	}
 	@When("the patch request is successful")
 	public void the_patch_request_is_successful() {
-		responseBody=patchResponse.then().log().all().assertThat().statusCode(200).extract().response().asString();
+		res=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		responseBody=patchResponse.then().log().all().spec(res).extract().response().asString();
 	}
 	@Then("created date is displayed")
 	public void created_date_is_displayed() {
