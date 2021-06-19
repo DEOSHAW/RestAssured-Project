@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-04T17:55:11 IST" name="Default suite" finished-at="2021-06-04T17:55:16 IST" duration-ms="4445">
+  <suite started-at="2021-06-19T07:19:47Z" name="Default suite" finished-at="2021-06-19T07:19:53Z" duration-ms="6476">
     <groups>
     </groups>
-    <test started-at="2021-06-04T17:55:11 IST" name="Default test" finished-at="2021-06-04T17:55:16 IST" duration-ms="4445">
-      <class name="testscripts.ReqResAPITest_withSpecBuilder">
-        <test-method signature="testReqResAPIs()[pri:0, instance:testscripts.ReqResAPITest_withSpecBuilder@69b2283a]" started-at="2021-06-04T17:55:11 IST" name="testReqResAPIs" finished-at="2021-06-04T17:55:16 IST" duration-ms="4398" status="PASS">
+    <test started-at="2021-06-19T07:19:47Z" name="Default test" finished-at="2021-06-19T07:19:53Z" duration-ms="6476">
+      <class name="testscripts.InstagramAPITest">
+        <test-method signature="testInstaAPI()[pri:0, instance:testscripts.InstagramAPITest@7995092a]" started-at="2021-06-19T12:49:47Z" name="testInstaAPI" finished-at="2021-06-19T12:49:53Z" duration-ms="6454" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testReqResAPIs -->
-      </class> <!-- testscripts.ReqResAPITest_withSpecBuilder -->
+        </test-method> <!-- testInstaAPI -->
+      </class> <!-- testscripts.InstagramAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
