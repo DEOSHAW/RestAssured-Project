@@ -1,17 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-19T07:19:47Z" name="Default suite" finished-at="2021-06-19T07:19:53Z" duration-ms="6476">
+  <suite started-at="2021-06-26T05:46:57Z" name="Default suite" finished-at="2021-06-26T05:47:01Z" duration-ms="4028">
     <groups>
     </groups>
-    <test started-at="2021-06-19T07:19:47Z" name="Default test" finished-at="2021-06-19T07:19:53Z" duration-ms="6476">
-      <class name="testscripts.InstagramAPITest">
-        <test-method signature="testInstaAPI()[pri:0, instance:testscripts.InstagramAPITest@7995092a]" started-at="2021-06-19T12:49:47Z" name="testInstaAPI" finished-at="2021-06-19T12:49:53Z" duration-ms="6454" status="PASS">
+    <test started-at="2021-06-26T05:46:57Z" name="Default test" finished-at="2021-06-26T05:47:01Z" duration-ms="4028">
+      <class name="testscripts.LibraryAPITestWithPOJO">
+        <test-method signature="testLibraryAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.LibraryAPITestWithPOJO@12d4bf7e]" started-at="2021-06-26T11:16:58Z" name="testLibraryAPI" data-provider="DataSupplierWithPoi" finished-at="2021-06-26T11:17:01Z" duration-ms="3035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mathematics Calculus-11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rto]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[256]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Deo Shaw]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInstaAPI -->
-      </class> <!-- testscripts.InstagramAPITest -->
+        </test-method> <!-- testLibraryAPI -->
+        <test-method signature="testLibraryAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testscripts.LibraryAPITestWithPOJO@12d4bf7e]" started-at="2021-06-26T11:17:01Z" name="testLibraryAPI" data-provider="DataSupplierWithPoi" finished-at="2021-06-26T11:17:01Z" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mathematics Calculus-12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rtp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[257]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Deo Shaw]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLibraryAPI -->
+      </class> <!-- testscripts.LibraryAPITestWithPOJO -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
