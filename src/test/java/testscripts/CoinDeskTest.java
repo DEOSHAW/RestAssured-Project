@@ -5,11 +5,16 @@ import static io.restassured.RestAssured.given;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+import pojo.CoinDesk;
 
 
 public class CoinDeskTest {
@@ -18,14 +23,14 @@ public class CoinDeskTest {
 	@Test
 	void testCoinDeskAPI()
 	{
-		
-		RequestSpecification req=given().log().all().spec(new RequestSpecBuilder().setBaseUri("https://api.coindesk.com").build());
+		RestAssured.baseURI="https://api.coindesk.com";
+		ResponseSpecification req=given().log().all().expect().defaultParser(Parser.JSON);
 		Response res=req.when().get("/v1/bpi/currentprice.json");
-		String response=res.then().log().all().spec(new ResponseSpecBuilder().expectStatusCode(200).build()).extract().response().asString();
+		CoinDesk response=res.then().log().all().spec(new ResponseSpecBuilder().expectStatusCode(200).build()).extract().response().as(CoinDesk.class);
 		
-		JsonPath js=new JsonPath(response);
-		Assert.assertEquals(js.getString("bpi.USD.code"),"USD");
-		System.out.println(js.getString("disclaimer"));
+		System.out.println(response);
+		Assert.assertEquals(response.getBpi().getUSD().getCode(),"USD");
+		System.out.println(response.getDisclaimer());
 		
 		
 	}

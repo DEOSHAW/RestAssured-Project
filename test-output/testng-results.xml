@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-10T06:57:01Z" name="Default suite" finished-at="2021-07-10T06:57:04Z" duration-ms="3057">
+  <suite started-at="2021-07-10T08:03:53Z" name="Default suite" finished-at="2021-07-10T08:03:55Z" duration-ms="2750">
     <groups>
     </groups>
-    <test started-at="2021-07-10T06:57:01Z" name="Default test" finished-at="2021-07-10T06:57:04Z" duration-ms="3057">
+    <test started-at="2021-07-10T08:03:53Z" name="Default test" finished-at="2021-07-10T08:03:55Z" duration-ms="2750">
       <class name="testscripts.CoinDeskTest">
-        <test-method signature="testCoinDeskAPI()[pri:0, instance:testscripts.CoinDeskTest@38c5cc4c]" started-at="2021-07-10T12:27:01Z" name="testCoinDeskAPI" finished-at="2021-07-10T12:27:04Z" duration-ms="3019" status="PASS">
+        <test-method signature="testCoinDeskAPI()[pri:0, instance:testscripts.CoinDeskTest@38c5cc4c]" started-at="2021-07-10T13:33:53Z" name="testCoinDeskAPI" finished-at="2021-07-10T13:33:55Z" duration-ms="2729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCoinDeskAPI -->
