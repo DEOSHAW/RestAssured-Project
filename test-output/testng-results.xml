@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-17T05:47:37Z" name="Default suite" finished-at="2021-07-17T05:47:40Z" duration-ms="3203">
+  <suite started-at="2021-07-22T05:56:18Z" name="Default suite" finished-at="2021-07-22T05:56:24Z" duration-ms="5626">
     <groups>
     </groups>
-    <test started-at="2021-07-17T05:47:37Z" name="Default test" finished-at="2021-07-17T05:47:40Z" duration-ms="3203">
-      <class name="testscripts.DataUSA_APITest">
-        <test-method signature="testDataUsa()[pri:0, instance:testscripts.DataUSA_APITest@38c5cc4c]" started-at="2021-07-17T11:17:37Z" name="testDataUsa" finished-at="2021-07-17T11:17:40Z" duration-ms="3164" status="PASS">
+    <test started-at="2021-07-22T05:56:18Z" name="Default test" finished-at="2021-07-22T05:56:24Z" duration-ms="5626">
+      <class name="testscripts.NationalizeAPITest">
+        <test-method signature="testNationalizeAPI()[pri:0, instance:testscripts.NationalizeAPITest@223f3642]" started-at="2021-07-22T11:26:18Z" name="testNationalizeAPI" finished-at="2021-07-22T11:26:24Z" duration-ms="5598" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDataUsa -->
-      </class> <!-- testscripts.DataUSA_APITest -->
+        </test-method> <!-- testNationalizeAPI -->
+      </class> <!-- testscripts.NationalizeAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

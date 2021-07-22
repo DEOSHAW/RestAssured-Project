@@ -2,7 +2,7 @@
 <suite name="ResAssuredAutomation">
  <test name="RA">
  <classes>
- <class name="testscripts.AddPlaceAPITestWithSerialization" />
+ <class name="testscripts.NationalizeAPITest" />
  </classes>
  </test>
 </suite>
