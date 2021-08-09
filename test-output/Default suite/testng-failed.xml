@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="testscripts.DataUSA_APITest">
+      <class name="testscripts.ZippoAPITest">
         <methods>
-          <include name="testDataUsa"/>
+          <include name="testZippoAPI"/>
         </methods>
-      </class> <!-- testscripts.DataUSA_APITest -->
+      </class> <!-- testscripts.ZippoAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-03T05:37:27Z" name="Default suite" finished-at="2021-08-03T05:37:34Z" duration-ms="6865">
+  <suite started-at="2021-08-09T04:54:08Z" name="Default suite" finished-at="2021-08-09T04:54:11Z" duration-ms="3607">
     <groups>
     </groups>
-    <test started-at="2021-08-03T05:37:27Z" name="Default test" finished-at="2021-08-03T05:37:34Z" duration-ms="6865">
-      <class name="testscripts.UniversityListAPI">
-        <test-method signature="testUniversityAPI()[pri:0, instance:testscripts.UniversityListAPI@38c5cc4c]" started-at="2021-08-03T11:07:27Z" name="testUniversityAPI" finished-at="2021-08-03T11:07:34Z" duration-ms="6845" status="PASS">
+    <test started-at="2021-08-09T04:54:08Z" name="Default test" finished-at="2021-08-09T04:54:11Z" duration-ms="3607">
+      <class name="testscripts.ZippoAPITest">
+        <test-method signature="testZippoAPI()[pri:0, instance:testscripts.ZippoAPITest@38c5cc4c]" started-at="2021-08-09T10:24:08Z" name="testZippoAPI" finished-at="2021-08-09T10:24:11Z" duration-ms="3581" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUniversityAPI -->
-      </class> <!-- testscripts.UniversityListAPI -->
+        </test-method> <!-- testZippoAPI -->
+      </class> <!-- testscripts.ZippoAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
