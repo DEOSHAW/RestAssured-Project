@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-09T04:54:08Z" name="Default suite" finished-at="2021-08-09T04:54:11Z" duration-ms="3607">
+  <suite started-at="2021-08-15T13:02:53Z" name="Default suite" finished-at="2021-08-15T13:02:57Z" duration-ms="3609">
     <groups>
     </groups>
-    <test started-at="2021-08-09T04:54:08Z" name="Default test" finished-at="2021-08-09T04:54:11Z" duration-ms="3607">
-      <class name="testscripts.ZippoAPITest">
-        <test-method signature="testZippoAPI()[pri:0, instance:testscripts.ZippoAPITest@38c5cc4c]" started-at="2021-08-09T10:24:08Z" name="testZippoAPI" finished-at="2021-08-09T10:24:11Z" duration-ms="3581" status="PASS">
+    <test started-at="2021-08-15T13:02:53Z" name="Default test" finished-at="2021-08-15T13:02:57Z" duration-ms="3609">
+      <class name="testscripts.ToolsQAAPITest">
+        <test-method signature="testToolsQAAPI()[pri:0, instance:testscripts.ToolsQAAPITest@38c5cc4c]" started-at="2021-08-15T18:32:53Z" name="testToolsQAAPI" finished-at="2021-08-15T18:32:57Z" duration-ms="3576" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testZippoAPI -->
-      </class> <!-- testscripts.ZippoAPITest -->
+        </test-method> <!-- testToolsQAAPI -->
+      </class> <!-- testscripts.ToolsQAAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
