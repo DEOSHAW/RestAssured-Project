@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-15T13:02:53Z" name="Default suite" finished-at="2021-08-15T13:02:57Z" duration-ms="3609">
+  <suite started-at="2021-08-20T04:43:50Z" name="Default suite" finished-at="2021-08-20T04:43:54Z" duration-ms="3947">
     <groups>
     </groups>
-    <test started-at="2021-08-15T13:02:53Z" name="Default test" finished-at="2021-08-15T13:02:57Z" duration-ms="3609">
-      <class name="testscripts.ToolsQAAPITest">
-        <test-method signature="testToolsQAAPI()[pri:0, instance:testscripts.ToolsQAAPITest@38c5cc4c]" started-at="2021-08-15T18:32:53Z" name="testToolsQAAPI" finished-at="2021-08-15T18:32:57Z" duration-ms="3576" status="PASS">
+    <test started-at="2021-08-20T04:43:50Z" name="Default test" finished-at="2021-08-20T04:43:54Z" duration-ms="3947">
+      <class name="testscripts.OAuth2Test">
+        <test-method signature="testSymfonycastsAPI()[pri:0, instance:testscripts.OAuth2Test@38c5cc4c]" started-at="2021-08-20T10:13:50Z" name="testSymfonycastsAPI" finished-at="2021-08-20T10:13:54Z" duration-ms="3923" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testToolsQAAPI -->
-      </class> <!-- testscripts.ToolsQAAPITest -->
+        </test-method> <!-- testSymfonycastsAPI -->
+      </class> <!-- testscripts.OAuth2Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
