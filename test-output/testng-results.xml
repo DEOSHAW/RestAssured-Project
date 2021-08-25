@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-25T13:52:37Z" name="Default suite" finished-at="2021-08-25T13:52:42Z" duration-ms="4781">
+  <suite started-at="2021-08-25T13:54:44Z" name="Default suite" finished-at="2021-08-25T13:54:49Z" duration-ms="4341">
     <groups>
     </groups>
-    <test started-at="2021-08-25T13:52:37Z" name="Default test" finished-at="2021-08-25T13:52:42Z" duration-ms="4781">
-      <class name="testscripts.Coop_CountEggs">
-        <test-method signature="testCoopAPI_GetNumberOfEggs()[pri:0, instance:testscripts.Coop_CountEggs@38c5cc4c]" started-at="2021-08-25T19:22:37Z" name="testCoopAPI_GetNumberOfEggs" finished-at="2021-08-25T19:22:42Z" duration-ms="4749" status="PASS">
+    <test started-at="2021-08-25T13:54:44Z" name="Default test" finished-at="2021-08-25T13:54:49Z" duration-ms="4341">
+      <class name="testscripts.OAuth2Test">
+        <test-method signature="testSymfonycastsAPI()[pri:0, instance:testscripts.OAuth2Test@38c5cc4c]" started-at="2021-08-25T19:24:44Z" name="testSymfonycastsAPI" finished-at="2021-08-25T19:24:49Z" duration-ms="4310" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCoopAPI_GetNumberOfEggs -->
-      </class> <!-- testscripts.Coop_CountEggs -->
+        </test-method> <!-- testSymfonycastsAPI -->
+      </class> <!-- testscripts.OAuth2Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

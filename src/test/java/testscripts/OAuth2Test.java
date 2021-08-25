@@ -16,7 +16,7 @@ public class OAuth2Test {
 		
 		
 		String respBody=given().log().all().formParam("client_id", "MyAppDeoShaw").formParam("grant_type", "client_credentials")
-		.formParam("client_secret", "7c55a7f84beea87e46ea0ee1407a32e7").formParam("redirect_uri", "localhost:8080")
+		.formParam("client_secret", "7c55a7f84beea87e46ea0ee1407a32e7")
 		.when().post("http://coop.apps.symfonycasts.com/token").then().log().all().statusCode(200).extract().response().asString();
 		
 		JsonPath js=new JsonPath(respBody);
