@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="testscripts.OAuth2Test">
+      <class name="testscripts.Coop_CountEggs">
         <methods>
-          <include name="testSymfonycastsAPI"/>
+          <include name="testCoopAPI_GetNumberOfEggs"/>
         </methods>
-      </class> <!-- testscripts.OAuth2Test -->
+      </class> <!-- testscripts.Coop_CountEggs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
