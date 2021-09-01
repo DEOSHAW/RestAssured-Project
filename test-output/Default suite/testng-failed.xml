@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="testscripts.Coop_CountEggs">
+      <class name="testscripts.Coop_UnlockBarn">
         <methods>
-          <include name="testCoopAPI_GetNumberOfEggs"/>
+          <include name="testUnlockBarnAPI"/>
         </methods>
-      </class> <!-- testscripts.Coop_CountEggs -->
+      </class> <!-- testscripts.Coop_UnlockBarn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
