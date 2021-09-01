@@ -1,5 +1,0 @@
-*.html
-*.png
-*.xml
-/test-output/
-
