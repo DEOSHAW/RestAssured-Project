@@ -19,7 +19,7 @@ public class InstagramAPITest {
 		//Get a list of what media is most popular at the moment.
 		RestAssured.baseURI="https://api.instagram.com";
 		ResponseSpecification rs=new ResponseSpecBuilder().expectStatusCode(200).build();
-		String response=when().get("/v1/media/popular").then().spec(rs).extract().response().asString();
+		String response=when().get("/v1/media/popular").then().log().all().spec(rs).extract().response().asString();
 		
 		//System.out.println(response);
 		//XmlPath js=new XmlPath(response);
