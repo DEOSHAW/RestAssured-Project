@@ -21,8 +21,7 @@ public class Gorest_API {
 		 RequestSpecification req= new RequestSpecBuilder().setBaseUri("https://gorest.co.in/public").addHeader("Authorization", "Bearer "+"c2ced1dd9f668aa80fdc165698b6e8c353f19da055ca6d938b7a47557e9c3ec4")
 		  .build();
 		 
-		 RestAssured.given().spec(req).when().delete("/v1/users/2263");
-		 
+		 RestAssured.given().spec(req).when().delete("/v1/users/27");
 		 //Getting the list of users
 		RestAssured.baseURI="https://gorest.co.in";
 	  String respBody= RestAssured.given().log().all()
@@ -35,6 +34,7 @@ public class Gorest_API {
 	  {
 		 System.out.println(js.getString("data["+i+"].name")); 
 	  }
+	 
 	  
 	  
 	
