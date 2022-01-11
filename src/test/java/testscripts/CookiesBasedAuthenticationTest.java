@@ -18,6 +18,8 @@ public class CookiesBasedAuthenticationTest {
 		json.put("username"	,"deoshaw3.it");
 		json.put("password"	,"Dd$03091991");
 		
+		System.out.println(json);
+		
 		RestAssured.baseURI="http://localhost:8080";
 		Response resp=RestAssured.given().log().all().header("Content-Type","application/json").body(json)
 		.when().post("/rest/auth/1/session");
