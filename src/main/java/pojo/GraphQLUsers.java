@@ -9,6 +9,7 @@ public class GraphQLUsers {
 	}*/
 	
 	private String query;
+	private String variables;
 	public String getQuery() {
 		return query;
 	}
@@ -21,6 +22,6 @@ public class GraphQLUsers {
 	public void setVariables(String variables) {
 		this.variables = variables;
 	}
-	private String variables;
+	
 
 }
