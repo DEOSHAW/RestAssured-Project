@@ -17,7 +17,7 @@ public class GitHub_Get_Repo_Details {
 	{
 		
 		RestAssured.baseURI="https://api.github.com";
-		String respBody=RestAssured.given().log().all().auth().oauth2("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")
+		String respBody=RestAssured.given().log().all().auth().oauth2("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")
 		.when().get("/user/repos")
 		.then().statusCode(200).assertThat().extract().response().asString();
 		//.body("id[0]", equalTo("<409239133>"))
