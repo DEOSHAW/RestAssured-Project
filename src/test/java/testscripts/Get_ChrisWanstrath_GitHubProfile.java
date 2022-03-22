@@ -20,9 +20,9 @@ public class Get_ChrisWanstrath_GitHubProfile {
 	void getProfileInformation()
 	{
 		RequestSpecification req=new RequestSpecBuilder().setBaseUri("https://api.github.com").build();
-		Response response=RestAssured.given().spec(req).when().get("/users/defunkt");
+		Response response=RestAssured.given().log().all().spec(req).when().get("/users/defunkt");
 		ResponseSpecification resp=new ResponseSpecBuilder().expectStatusCode(200).expectHeader("Content-Length", "484").build();
-		String respBody=response.then().spec(resp).body("name", Matchers.equalTo("Chris Wanstrath")).extract().response().asString();
+		String respBody=response.then().log().all().spec(resp).body("name", Matchers.equalTo("Chris Wanstrath")).extract().response().asString();
 		
 		JsonPath js=new JsonPath(respBody);
 		
