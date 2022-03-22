@@ -2,7 +2,7 @@
 <suite name="ResAssuredAutomation">
  <test name="RA">
  <classes>
- <class name="testscripts.NationalizeAPITest" />
+ <class name="testscripts.Get_ChrisWanstrath_GitHubProfile" />
  </classes>
  </test>
 </suite>
