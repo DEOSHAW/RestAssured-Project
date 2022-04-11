@@ -31,9 +31,9 @@ public class UniversitiesAPI {
 		String responseBody=given().spec(req).log().all().when().get("/search").then().log().body().spec(res).extract().response().asString();
 		JsonPath js=new JsonPath(responseBody);
 		int size=js.getList("array").size();
-		for(int i=0;i<size;i++)
+		for(int i=0;i<10;i++)
 		{
-		System.out.println(js.get("name["+i+"]"));
+		System.out.println(js.getList("web_pages["+i+"]").get(0));
 		}
 		
 		
