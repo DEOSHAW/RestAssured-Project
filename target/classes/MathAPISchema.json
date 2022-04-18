@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "found": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "text",
+    "number",
+    "found",
+    "type"
+  ]
+}
