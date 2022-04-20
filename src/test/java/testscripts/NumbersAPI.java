@@ -13,7 +13,7 @@ import pojo.Num;
 
 public class NumbersAPI {
 	 
-	@Test(enabled = false)
+	@Test
 	void testNumbersAPI()
 	{
 		
