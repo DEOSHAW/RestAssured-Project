@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
@@ -20,7 +22,7 @@ public class ReqResTest {
 	void testDeleteAPI()
 	{
 		RequestSpecification req=new RequestSpecBuilder().setBaseUri("https://reqres.in").build();
-		Response resp=RestAssured.given().spec(req).when().delete("/api/users/2");
+		Response resp=RestAssured.given().filters(new RequestLoggingFilter(),new ResponseLoggingFilter()).spec(req).when().delete("/api/users/2");
 		
 		ResponseSpecification response=new ResponseSpecBuilder().expectStatusCode(204).build();
 		Headers head=resp.then().spec(response).extract().response().getHeaders();
