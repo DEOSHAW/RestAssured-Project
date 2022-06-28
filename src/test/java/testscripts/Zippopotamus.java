@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -23,10 +24,15 @@ public class Zippopotamus {
 		Response resp=RestAssured.given().log().all().spec(req)
 		.when().get("/us/{RID}");
 		
-		ResponseSpecification response=new ResponseSpecBuilder().expectStatusCode(200).build();
-		Zippo ob=resp.then().log().all().spec(response).extract().response().as(Zippo.class);
+		/*ResponseSpecification response=new ResponseSpecBuilder().expectStatusCode(200).build();
+		Zippo ob=resp.then().log().all().spec(response).extract().response().as(Zippo.class);*/
 		
-		System.out.println("Place is: "+ob.getPlaces().get(0).getPlace_name());
+		ResponseSpecification response=new ResponseSpecBuilder().expectStatusCode(200).build();
+		String respBody=resp.then().log().all().spec(response).extract().response().asString();
+		
+		JsonPath js=new JsonPath(respBody);
+		
+		System.out.println("Country is: "+js.getString("'country abbreviation'"));
 		
 		
 	}
