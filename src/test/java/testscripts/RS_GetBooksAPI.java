@@ -17,7 +17,7 @@ public class RS_GetBooksAPI {
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		RSBooks[] rsBooks=RestAssured.given().log().all().queryParam("AuthorName", "shetty")
 		.when().get("/Library/GetBook.php")
-		.then().assertThat().statusCode(200).extract().response().as(RSBooks[].class);
+		.then().assertThat().log().all().statusCode(200).extract().response().as(RSBooks[].class);
 		
 		System.out.println(rsBooks[5].getBook_name());
 		
