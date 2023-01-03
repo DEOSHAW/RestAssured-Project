@@ -30,6 +30,8 @@ public class HerokuUploadAPITest {
 		
 		XmlPath xml=new XmlPath(CompatibilityMode.HTML,respBody);
 		System.out.println("Uploaded file name is: "+xml.getString("html.html.body.div[1].div.div.div"));
+		
+		System.out.println("Name is: "+xml.getString("html.html.head.meta.@name"));
 		//Test to write response in a json file
 		Response resp=RestAssured.given().log().all()
 		.when().get("https://reqres.in/api/users");
