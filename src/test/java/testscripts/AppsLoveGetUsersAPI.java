@@ -1,8 +1,5 @@
 package testscripts;
 
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Random;
 
 import org.hamcrest.Matchers;
@@ -17,18 +14,17 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import pojo.AppsLoveUser;
 
-public class AppsLove_LoginAPI {
-	
-	
+public class AppsLoveGetUsersAPI {
 	
 	@Test
-	void testLoginAPI() throws Exception
+	void testGetUsersAPI()
 	{
 		
 		JSONObject user=new JSONObject();
 		Random random=new Random();
-		int num=random.nextInt(100);
+		//int num=random.nextInt();
 		user.put("email", "bechan682@gmail.com");
 		user.put("password", 123456);
 		
@@ -45,8 +41,17 @@ public class AppsLove_LoginAPI {
 		String token=js.getString("data.Token");
 		System.out.println("Token is: "+token);
 		
+		//Making request to Get Users API
+		RequestSpecification reqSpecification=new RequestSpecBuilder().setBaseUri("http://restapi.adequateshop.com")
+				.addQueryParam("page", 1).build();
+		ResponseSpecification resSpecification=new ResponseSpecBuilder().expectStatusCode(200).build();
 		
+		AppsLoveUser ob=RestAssured.given().spec(reqSpecification).filters(new RequestLoggingFilter(),new ResponseLoggingFilter())
+		.auth().oauth2(token)
+		.when().get("/api/users")
+		.then().assertThat().spec(resSpecification).extract().as(AppsLoveUser.class);
 		
+		System.out.println("Third user's name is: "+ob.getAppsLoveData().get(2).getName());
 	}
 
 }
