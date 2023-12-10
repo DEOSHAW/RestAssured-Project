@@ -11,7 +11,7 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-public class PRAPokemonAPITest 
+public class PRA_PokemonAPITest 
 {
 	
 	@Test
