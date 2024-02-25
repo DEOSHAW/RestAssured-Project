@@ -4,8 +4,7 @@
   <test name="Test">
     <classes>
       
-      <class name="testscripts.GoRest_ChainingAPITests1"/>
-      <class name="testscripts.GoRest_ChainingAPITests2"/>
+      <class name="testscripts.FakeRestAPI_DeleteActivities"/>
      
     </classes>
   </test> <!-- Test -->
