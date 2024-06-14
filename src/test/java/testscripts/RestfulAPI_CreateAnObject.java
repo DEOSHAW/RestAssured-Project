@@ -17,7 +17,7 @@ import pojo.Objects;
 public class RestfulAPI_CreateAnObject
 {
 	@Test
-	void testGetAllObjectsAPI()
+	void testCreateObjectsAPI()
 	{
 		//https://api.restful-api.dev/objects
 		DataObject dataOb=new DataObject();
