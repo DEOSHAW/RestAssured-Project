@@ -26,7 +26,7 @@ public class DummyJsonSearchProductAPI
 		.addQueryParam("q", "Laptop").build();
 		
 		ResponseSpecification resSpec=new ResponseSpecBuilder().expectStatusCode(200)
-				.expectBody("products.title",Matchers.hasItem("Microsoft Surface Laptop 4")).build();
+				.expectBody("products.title",Matchers.hasItem("Huawei Matebook X Pro")).build();
 		
 		Headers hds=RestAssured.given().spec(reqSpec).filters(new RequestLoggingFilter(),new ResponseLoggingFilter())
 		.when().get("/products/search")
