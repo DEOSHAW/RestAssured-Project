@@ -2,19 +2,13 @@ package pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class SamplePhoto
 {
-	private boolean success;
 	@JsonIgnoreProperties
 	private String message;
 	private Photo photo;
 	
-	public boolean getSuccess() {
-		return success;
-	}
-	public void setSuccess(boolean success) {
-		this.success = success;
-	}
 	public String getMessage() {
 		return message;
 	}
