@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class SamplePhoto
 {
-	@JsonIgnoreProperties
 	private String message;
 	private Photo photo;
 	
