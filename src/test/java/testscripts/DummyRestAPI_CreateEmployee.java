@@ -19,15 +19,17 @@ import io.restassured.specification.ResponseSpecification;
 public class DummyRestAPI_CreateEmployee 
 {
 	@Test
-	void testCreateEmployeeAPI() throws IOException
+	void validateCreateEmployeeAPITest() throws IOException
 	{
 		RequestSpecification reqSpec=new RequestSpecBuilder().setBaseUri("https://dummy.restapiexample.com")
+		.addHeader("Content-Type", "application/json")
 		.setBody(new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir")+File.separator+"Employee.json")))).build();
 		
 		ResponseSpecification resSpec=new ResponseSpecBuilder().expectStatusCode(200)
-				.expectBody("status",Matchers.equalTo("success"))
+				.expectBody("message",Matchers.equalTo("Successfully! Record has been added."))
 				.build();
-		RestAssured.given().spec(reqSpec).filters(new RequestLoggingFilter(),new ResponseLoggingFilter())
+		
+		RestAssured.given().filters(new RequestLoggingFilter(), new ResponseLoggingFilter()).spec(reqSpec)
 		.when().post("/api/v1/create")
 		.then().assertThat().spec(resSpec);
 		
