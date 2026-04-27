@@ -23,6 +23,7 @@ public class DummyRestAPI_CreateEmployee
 	@Test
 	void validateCreateEmployeeAPITest() throws IOException
 	{
+		//Create Employee Record
 		 RequestSpecification reqSpec=new RequestSpecBuilder().setBaseUri("https://dummy.restapiexample.com")
 		.addHeader("Content-Type", "application/json")
 		.setBody(new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir")+File.separator+"Employee.json"))))
@@ -37,6 +38,5 @@ public class DummyRestAPI_CreateEmployee
 		 .then().assertThat().spec(resSpec).extract().response().jsonPath();
 		 
 		 Assert.assertEquals(js.getString("message"), "Successfully! Record has been added.");
-		
 	}
 }
