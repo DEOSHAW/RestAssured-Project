@@ -8,8 +8,10 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import junit.framework.Assert;
 import pojo.Comment;
 
 
@@ -19,18 +21,11 @@ public class JsonPlaceHolderGetCommentsTest
 	void testGetCommentsAPI()
 	{
 		RequestSpecification reqSpec=new RequestSpecBuilder().setBaseUri("https://jsonplaceholder.typicode.com/").build();
-		ResponseSpecification resSpec=new ResponseSpecBuilder().expectStatusCode(200)
-				.expectBody("name[3]",Matchers.equalTo("alias odio sit"))
-				.build();
+		ResponseSpecification resSpec=new ResponseSpecBuilder().expectStatusCode(200).build();
 		
-		Comment[] comments=RestAssured.given().filters(new RequestLoggingFilter(),new ResponseLoggingFilter()).spec(reqSpec)
+		JsonPath js=RestAssured.given().filters(new RequestLoggingFilter(),new ResponseLoggingFilter()).spec(reqSpec)
 		.when().get("/comments")
-		.then().assertThat().spec(resSpec).extract().response().as(Comment[].class);
-		
-		System.out.println("Third name is: "+comments[2].getName());
-		
-		
-		
+		.then().assertThat().spec(resSpec).extract().response().jsonPath();
+		Assert.assertEquals(js.getList("id").size(), 500);
 	}
-
 }
