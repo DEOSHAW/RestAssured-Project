@@ -18,12 +18,15 @@ public class JsonPlaceHolder_AlbumAPITest
 	void testGetAlbumsAPI()
 	{
 		RequestSpecification reqSpec=new RequestSpecBuilder().setBaseUri("https://jsonplaceholder.typicode.com/").build();
+		
 		ResponseSpecification resSpec=new ResponseSpecBuilder().expectStatusCode(200).build();
 		
-		Album[] albums=RestAssured.given().filters(new RequestLoggingFilter(),new ResponseLoggingFilter()).spec(reqSpec)
+		Album[] albums=RestAssured.given().filters(new RequestLoggingFilter(), new ResponseLoggingFilter()).spec(reqSpec)
 		.when().get("/albums")
 		.then().assertThat().spec(resSpec).extract().response().as(Album[].class);
-		Assert.assertEquals(albums.length, 100);
+		
+	     Assert.assertEquals(albums.length, 100);
+	     System.out.println(albums[3].getTitle());
 	}
 
 }
